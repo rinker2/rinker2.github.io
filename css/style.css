@@ -191,7 +191,7 @@ button:active{
     font-weight: normal;
 }
 table{
-    position: absolute;
+    position: fixed;
     overflow: scroll;
     z-index: 3;
     min-width: 550px;
