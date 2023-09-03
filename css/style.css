@@ -160,7 +160,7 @@ button:active{
     transform: scale(1);
 } */
 .about .overlay, .schedule .overlay{
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
