@@ -150,7 +150,7 @@ button:active{
 }
 @media (max-width: 1200px){
     .about-window, .schedule-window{
-        min-width: 100vw;
+        min-width: 100%;
     }
 }
 .about.open, .schedule.open{
@@ -167,12 +167,12 @@ button:active{
     width: 100%;
     height: 100%;
     background-color: #000;
-    opacity: .7;
+    opacity: .5;
     z-index: 0;
 }
 
 .about-window h1, .schedule-window h1{
-    font-size: /*48px*/ 7vh;
+    font-size: /*36px*/ 5.5vh;
     font-weight: bold;
 }
 .about-window h2{
@@ -209,5 +209,6 @@ td{
     padding: 5px;
 }
 td span:nth-child(1), td span:nth-child(4){
+    font-size: 3vh;
     font-weight: bold;
 }
