@@ -1,6 +1,6 @@
 setInterval(() => {
 	let d = new Date();
-	d = new Date(d.getFullYear(), d.getMonth(), 5, 11, 0, 0);
+	d = new Date(d.getFullYear(), d.getMonth(), 4, 11, 0, 0);
 	let midnight = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 0, 0, 0);
 	midnight = midnight.getTime();
 	let now_ms = d.getTime();
