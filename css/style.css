@@ -1,0 +1,199 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,*:before,*:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family: inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{
+    font-size: inherit;
+    font-weight: 400;
+}
+/*-----------------------*/
+body {
+    background-color: #0F0F0F;
+}
+
+
+.block {
+    font-size: 20px;
+    margin: 0 auto;
+    padding: 20px 0 0 0;
+    color: #D8D8D8;
+    text-align: center;
+}
+
+.subject-name{
+    font-size: 24px;
+}
+
+.cab{
+    font-size: 200px;
+    font-weight: bold;
+}
+
+.per{
+    margin: -12px 0 10px 0;
+}
+
+.notes{
+    color: #FFC821;
+}
+.datetime{
+    margin-top: 10px;
+}
+
+.buttons{
+    margin: 0;
+    bottom: 0;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+button{
+    height: 44px;
+    line-height: 44px;
+    padding: 0 20px;
+    border-radius: 22px;
+    background: #D8D8D8;
+    color: #0F0F0F;
+    font-size: 20px;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
+    transition: background .1s;
+}
+button:hover{
+    background: #C0C0C0;
+}
+button:active{
+    background: #1F1F1F;
+    color: #D8D8D8;
+}
+.btn-close-about, .btn-close-schedule{
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    font-size: 24px;
+    color: #0F0F0F;
+    border: none;
+    padding: 0 12px;
+}
+.about, .schedule{
+    color: #D8D8D8;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.14s ease-out;
+}
+.about-window{
+    text-align: justify;
+}
+.about-window, .schedule-window{
+    font-size: 20px;
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    border-radius: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .4);
+    background-color: #0F0F0F;
+    padding: 30px;
+    margin: 20px;
+    /* transform: scale(0);
+    transition: transform .3s; */
+}
+.about.open, .schedule.open{
+    visibility: visible;
+    opacity: 1;
+}
+/* .about.open .about-window, .schedule.open .schedule-window{
+    transform: scale(1);
+} */
+.about .overlay, .schedule .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .7;
+    z-index: 0;
+}
+
+.about-window h1, .schedule-window h1{
+    font-size: 48px;
+    font-weight: bold;
+}
+.about-window h2{
+    margin-top: 8px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.about-window p{
+    margin-top: 4px;
+}
+.schedule-window h1{
+    margin-bottom: 8px;
+    
+}
+.schedule-window h1 span{
+    font-size: 12px;
+    font-weight: normal;
+}
+table{
+    border: 1px solid;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: rgba(216, 216, 216, 0.5) /*#D8D8D8*/;
+    border-radius: 10px;
+    
+}
+th span{
+    font-size: 14px;
+}
+td{
+    font-size: 18px;
+    background-color: #1F1F1F;
+    padding: 5px;
+}
+td span:nth-child(1), td span:nth-child(4){
+    font-weight: bold;
+}
