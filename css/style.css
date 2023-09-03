@@ -192,6 +192,7 @@ button:active{
 }
 table{
     position: absolute;
+    overflow: scroll;
     z-index: 3;
     min-width: 550px;
     border: 1px solid;
