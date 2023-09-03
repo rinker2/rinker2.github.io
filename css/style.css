@@ -149,7 +149,7 @@ button:active{
 }
 @media (max-width: 1200px){
     .about-window, .schedule-window{
-        min-width: 100%;
+        min-width: 90%;
     }
 }
 .about.open, .schedule.open{
@@ -199,7 +199,7 @@ table{
     border-spacing: 2px;
     border-color: rgba(216, 216, 216, 0.5) /*#D8D8D8*/;
     border-radius: 10px;
-    
+    overflow: scroll;
 }
 th span{
     font-size: /*12px*/ 2.2vh;
