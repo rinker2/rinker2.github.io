@@ -148,9 +148,9 @@ button:active{
     /* transform: scale(0);
     transition: transform .3s; */
 }
-@media (max-width: 600px){
+@media (max-width: 1200px){
     .about-window, .schedule-window{
-        max-width: 100vw;
+        min-width: 100vw;
     }
 }
 .about.open, .schedule.open{
@@ -192,7 +192,7 @@ button:active{
     font-weight: normal;
 }
 table{
-    max-width: 100%;
+    min-width: 100%;
     border: 1px solid;
     border-collapse: separate;
     border-spacing: 2px;
