@@ -10,7 +10,6 @@
         <link rel="stylesheet" href="css/style.css">
         <!--Кодировка страницы-->
         <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
-        <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
         <meta name="viewport" content="width=device-width">
     </head>
     <!--Отображаемое тело страницы-->
@@ -53,49 +52,51 @@
         <div class="schedule" id="schedule-modal">
             <div class="schedule-window">
                 <h1>Расписание пар<span> (нет, блин, график лёд)</span></h1>
-                <table>
-                    <thead>
+                <div class="table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>1 <span>[8:30 - 9:50]</span></th>
+                                <th>2 <span>[10:00 - 11:20]</span></th>
+                                <th>3 <span>[11:30 - 12:50]</span></th>
+                            </tr>
+                        </thead>
                         <tr>
-                            <th></th>
-                            <th>1 <span>[8:30 - 9:50]</span></th>
-                            <th>2 <span>[10:00 - 11:20]</span></th>
-                            <th>3 <span>[11:30 - 12:50]</span></th>
+                            <td>Пн</td>
+                            <td><span id="c11"></span> <span id="n11"></span></td>
+                            <td><span id="c12"></span> <span id="n12"></span></td>
+                            <td><span id="c13"></span> <span id="n13"></span></td>
                         </tr>
-                    </thead>
-                    <tr>
-                        <td>Пн</td>
-                        <td><span id="c11"></span> <span id="n11"></span></td>
-                        <td><span id="c12"></span> <span id="n12"></span></td>
-                        <td><span id="c13"></span> <span id="n13"></span></td>
-                    </tr>
-                    <tr>
-                        <td>Вт</td>
-                        <td><span id="c21"></span> <span id="n21"></span></td>
-                        <td><span id="c22"></span> <span id="n22"></span></td>
-                    </tr>
-                    <tr>
-                        <td>Ср</td>
-                        <td><span id="c31"></span> <span id="n31"></span></td>
-                        <td>Верхняя неделя:
-                            <span id="c321"></span> <span id="n321"></span>
-                            <br>
-                            Нижняя неделя:
-                            <span id="c322"></span> <span id="n322">
-                        </td>
-                        <td><span id="c33"></span> <span id="n33"></span></td>
-                    </tr>
-                    <tr>
-                        <td>Чт</td>
-                        <!-- <td><span id="c41"></span>: <span id="n41"></span></td>
-                        <td><span id="c42"></span>: <span id="n42"></span></td> -->
-                    </tr>
-                    <tr>
-                        <td>Пт</td>
-                        <td><span id="c51"></span> <span id="n51"></span></td>
-                        <td><span id="c52"></span> <span id="n52"></span></td>
-                        <td><span id="c53"></span> <span id="n53"></span></td>
-                    </tr>
-                </table>
+                        <tr>
+                            <td>Вт</td>
+                            <td><span id="c21"></span> <span id="n21"></span></td>
+                            <td><span id="c22"></span> <span id="n22"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Ср</td>
+                            <td><span id="c31"></span> <span id="n31"></span></td>
+                            <td>Верхняя неделя:
+                                <span id="c321"></span> <span id="n321"></span>
+                                <br>
+                                Нижняя неделя:
+                                <span id="c322"></span> <span id="n322">
+                            </td>
+                            <td><span id="c33"></span> <span id="n33"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Чт</td>
+                            <!-- <td><span id="c41"></span>: <span id="n41"></span></td>
+                            <td><span id="c42"></span>: <span id="n42"></span></td> -->
+                        </tr>
+                        <tr>
+                            <td>Пт</td>
+                            <td><span id="c51"></span> <span id="n51"></span></td>
+                            <td><span id="c52"></span> <span id="n52"></span></td>
+                            <td><span id="c53"></span> <span id="n53"></span></td>
+                        </tr>
+                    </table>
+                </div>
                 <button class="btn-close-schedule" id="close-schedule-btn">✖</button>
             </div>
             <div class="overlay"></div>
