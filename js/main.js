@@ -127,7 +127,7 @@ setInterval(() => {
 				note = `Нижняя неделя (Üst həftə)`;
 			}
 		}
-  else if (weekday == `ср` && ms_inday < end3) {
+		else if (weekday == `ср` && ms_inday < end3) {
 			cab = cab33;
 			name = name33;
 		}	
