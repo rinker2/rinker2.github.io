@@ -131,14 +131,6 @@ setInterval(() => {
 			cab = cab33;
 			name = name33;
 		}	
-  else if (weekday == `чт` && ms_inday < end1) {
-			cab = cab41;
-			name = name41;
-		}
-		else if (weekday == 'чт' && ms_inday < end2) {
-			cab = cab42;
-			name = name42;
-		}
 		else if (weekday == 'пт' && ms_inday < end3) {
 			name = name53;
 			cab = cab53;
