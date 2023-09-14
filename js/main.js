@@ -1,5 +1,6 @@
 setInterval(() => {
 	let d = new Date();
+	// d = new Date(d.getFullYear(), d.getMonth(), 4, 9, 0, 0);
 	let midnight = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 0, 0, 0);
 	midnight = midnight.getTime();
 	let now_ms = d.getTime();
@@ -33,13 +34,14 @@ setInterval(() => {
 		n22.textContent = name22;
 		let cab22 = 410;
 		c22.textContent = cab22;
+		let name23 = `Комплексный анализ (Лекция)`;
+		n23.textContent = name23;
+		let cab23 = 427;
+		c23.textContent = cab23;
 
 		// Ср
 		let alt = true;
-		let name31 = `Комплексный анализ (Лекция)`;
-		n31.textContent = name31;
-		let cab31 = 319;
-		c31.textContent = cab31;
+		
 		let name321 = `Комплексный анализ (Семинар)`;
 		n321.textContent = name321;
 		let cab321 = 319;
@@ -111,10 +113,6 @@ setInterval(() => {
 			cab = cab23;
 			name = name23;
 		}
-		else if (weekday == `ср` && ms_inday < end1) {
-			cab = cab31;
-			name = name31;
-		}
 		else if (weekday == `ср` && ms_inday < end2) {
 			if (alt){
 				cab = cab321;
@@ -130,7 +128,15 @@ setInterval(() => {
 		else if (weekday == `ср` && ms_inday < end3) {
 			cab = cab33;
 			name = name33;
-		}	
+		}
+		else if (weekday == 'пт' && ms_inday < end1) {
+			name = name51;
+			cab = cab51;
+		}
+		else if (weekday == 'пт' && ms_inday < end2) {
+			name = name52;
+			cab = cab52;
+		}
 		else if (weekday == 'пт' && ms_inday < end3) {
 			name = name53;
 			cab = cab53;
