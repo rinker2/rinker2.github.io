@@ -53,12 +53,6 @@ let cab43 = 316;
 n43.textContent = name43;
 c43.textContent = cab43;
 
-let end1 = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 15, 20);
-end1 = end1.getTime() - midnight;
-let end2 = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 16, 50);
-end2 = end2.getTime() - midnight;
-let end3 = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 18, 20);
-end3 = end3.getTime() - midnight;
 
 
 setInterval(() => {
@@ -72,6 +66,13 @@ setInterval(() => {
 	let date = d.toLocaleDateString('ru-RU');
 	let time = d.toLocaleTimeString('ru-RU');
 	dt.textContent = `${weekday} ${date} ${time}`;
+	
+	let end1 = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 15, 20);
+	end1 = end1.getTime() - midnight;
+	let end2 = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 16, 50);
+	end2 = end2.getTime() - midnight;
+	let end3 = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 18, 20);
+	end3 = end3.getTime() - midnight;
 	function cabinet(weekday, midnight, ms_inday){
 		// Применение данных
 		let cab;
