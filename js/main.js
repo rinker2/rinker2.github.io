@@ -16,12 +16,12 @@ n13.textContent = name13;
 c13.textContent = cab13;
 
 // Вт
-let name21 = `Английский язык B1 (Семинар)`;
+let name21 = `Компьютерная графика (Лекция)`;
 let cab21 = 32;
 n21.textContent = name21;
 c21.textContent = cab21;
 
-let name22 = `Английский язык B1 (Семинар)`;
+let name22 = `Компьютерная графика (Семинар)`;
 let cab22 = 32;
 n22.textContent = name22;
 c22.textContent = cab22;
