@@ -246,7 +246,6 @@ th span{
     font-size: /*12px*/ 2.2vh;
 }
 td:nth-child(1){
-    z-index: 3;
     position: relative;
     overflow-x: hidden;
 }
