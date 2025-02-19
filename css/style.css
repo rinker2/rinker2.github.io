@@ -247,7 +247,7 @@ th span{
 }
 td:nth-child(1){
     z-index: 3;
-    position: fixed;
+    position: relative;
     overflow-x: hidden;
 }
 td{
