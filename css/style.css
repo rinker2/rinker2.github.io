@@ -246,7 +246,7 @@ th span{
     font-size: /*12px*/ 2.2vh;
 }
 td:nth-child(1){
-    position: sticky;
+    position: fixed;
     overflow-x: hidden;
 }
 td{
